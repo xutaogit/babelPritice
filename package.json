@@ -1,0 +1,23 @@
+{
+  "name": "fileframe",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.1.0",
+    "gamma": "^1.0.0",
+    "jquery": "^1.12.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel js -d lib -s && npm run browser",
+    "browser": "browserify lib/app.js >bundle.js",
+    "show": "babel-node app.js"
+  },
+  "author": "sam",
+  "license": "MIT",
+  "description": ""
+}
